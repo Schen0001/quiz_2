@@ -1,0 +1,27 @@
+<div class="posts-new-form">
+    <h1>Enter your ideas here</h1>
+    <%= form_for(@new_post) do |f| %>
+        <%= f.label "Title:" %>
+            <%= f.text_field :title, :placeholder=> "Title" %> <br> <br>
+                <%= f.label "Idea:" %>
+                    <%= f.text_area :body, :placeholder=> "Share your ideas..." %> <br> <br>
+                        <%= f.submit "Submit Idea" , :class=> "btn btn-primary" %> <br> <br>
+                            <% end %>
+
+                                <div class="title-body">
+                                    <%= @all_posts.each do |p| %>
+                                        <ul>
+                                            <li><b>
+                                                    <%= p.title %>
+                                                </b></li>
+                                            <li>
+                                                <%= p.body %>
+                                            </li>
+                                            <div class="created-time">
+                                                <%= p.created_at %>
+                                            </div>
+                                            <hr>
+                                        </ul>
+                                        <% end %>
+                                </div>
+</div>

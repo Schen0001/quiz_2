@@ -1,0 +1,48 @@
+body {
+    background-image: url("grid-wallpaper.jpg");
+    background-size: 3840px 2160px;
+    font-size: 1.2em;
+}
+
+.login-signup {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.title-body ul {
+    list-style: none;
+}
+
+.created-time {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.users-new-form {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border: 5px solid black;
+}
+
+.sessions-new-form {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border: 5px solid black;
+}
+
+.posts-new-form {
+    background-color: white;
+    padding: 10px;
+    border: 5px solid black;
+}
+
+.index-page {
+    background-color: white;
+    padding: 10px;
+    border: 5px solid black;
+    text-align: center;
+}
